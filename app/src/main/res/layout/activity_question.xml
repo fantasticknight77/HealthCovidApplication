@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <View
+        android:id="@+id/v_question"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_question_back"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="8dp"
+        android:text="Questions"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/sv_question"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:backgroundTint="#C0C0C0"
+        app:layout_constraintBottom_toTopOf="@+id/v_question2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_question">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="1. Are you exhibiting 2 or more symptoms as listed below?\n• Fever\n• Chills\n• Shivering (rigor)\n• Body ache\n• Headache\n• Sore throat\n• nausea or vomiting\n• Diarrhea\n• Fatigue\n• Runny nose or nasal congestion"/>
+
+            <RadioGroup
+                android:id="@+id/rg_question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_no1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="No"/>
+
+                <RadioButton
+                    android:id="@+id/rb_yes1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yes"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="2. Besides the above, are you exhibiting any of the symptoms listed below?\n• Cough\n• Difficulty breathing\n• Loss of smell\n• Loss of taste"/>
+
+            <RadioGroup
+                android:id="@+id/rg_question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_no2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="No"/>
+
+                <RadioButton
+                    android:id="@+id/rb_yes2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yes"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="3. Have you attended any event / areas associated with known COVID-19 cluster?"/>
+
+            <RadioGroup
+                android:id="@+id/rg_question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_no3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="No"/>
+
+                <RadioButton
+                    android:id="@+id/rb_yes3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yes"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="4. Have you travelled to any country outside Malaysia within 14 days before onset of symptoms?"/>
+
+            <RadioGroup
+                android:id="@+id/rg_question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_no4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="No"/>
+
+                <RadioButton
+                    android:id="@+id/rb_yes4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yes"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="5. Have you had close contact to confirmed or suspected case of COVID-19 within 14 days before onset of illness?"/>
+
+            <RadioGroup
+                android:id="@+id/rg_question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_no5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="No"/>
+
+                <RadioButton
+                    android:id="@+id/rb_yes5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yes"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="6. Are you a MOH COVID-19 volunteer in the last 14 days??"/>
+
+            <RadioGroup
+                android:id="@+id/rg_question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_no6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="No"/>
+
+                <RadioButton
+                    android:id="@+id/rb_yes6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yes"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/v_question2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="Submit"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
